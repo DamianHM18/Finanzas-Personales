@@ -160,3 +160,56 @@ th { color: var(--text-muted); }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
 ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--neon-green); }
+
+/* =========================================
+   ADAPTACIÓN PARA TELÉFONOS (RESPONSIVE)
+   ========================================= */
+
+/* Permite hacer scroll lateral en la tabla si la pantalla es muy pequeña */
+.table-container {
+    width: 100%;
+    overflow-x: auto; 
+    border-radius: 8px;
+}
+
+/* Reglas específicas para pantallas de celular (menos de 600px de ancho) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .date-display {
+        font-size: 1rem;
+    }
+
+    /* Las 4 tarjetas de saldo ahora irán en una sola columna hacia abajo */
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    #total-balance {
+        font-size: 2.5rem; /* Texto un poco más pequeño para que quepa bien */
+    }
+    
+    .card {
+        padding: 15px;
+    }
+    
+    /* Ajustes para la tabla en móviles */
+    th, td {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+        white-space: nowrap; /* Evita que el texto de la tabla se rompa en varias líneas */
+    }
+
+    .btn-neon {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}
