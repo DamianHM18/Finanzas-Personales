@@ -1,3 +1,9 @@
+// Registrar el Service Worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log("Service Worker registrado con éxito."))
+      .catch(err => console.log("Error al registrar el Service Worker.", err));
+}
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Mostrar fecha en tiempo real y verificar Alerta de Tarjeta
     const updateDateAndAlerts = () => {
