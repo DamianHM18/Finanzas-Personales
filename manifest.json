@@ -7,12 +7,12 @@
   "theme_color": "#0a0a0a",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/192px-Globe_icon.svg.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512.png",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Globe_icon.svg/512px-Globe_icon.svg.png",
       "sizes": "512x512",
       "type": "image/png"
     }
